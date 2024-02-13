@@ -167,7 +167,7 @@ const SideBar = () => {
                   alt="User Logo"
                 />
                 <div className="flex flex-col ">
-                  <span aria-hidden="true" className="font-bold ">
+                  <span aria-hidden="true" className="font-bold text-nowrap">
                     Moni Roy
                   </span>
                   <span
@@ -178,7 +178,10 @@ const SideBar = () => {
                   </span>
                 </div>
               </a>
-              <span className="text-[#424242]  mt-6 mb-7" aria-hidden="true">
+              <span
+                className="text-[#424242] text-nowrap mt-6 mb-7"
+                aria-hidden="true"
+              >
                 Street Suite.2.0
               </span>
             </li>
