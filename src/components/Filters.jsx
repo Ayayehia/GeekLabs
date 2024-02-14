@@ -6,15 +6,15 @@ import RadioCollapse from "./RadioCollapse";
 import CarsoulChoice from "./CarsoulChoice";
 const Filters = () => {
   return (
-    <div className="bg-[#181818] w-full h-full rounded-lg mt-4 mx-6 mb-6 text-white flex flex-col items-center gap-4">
+    <div className="bg-[#181818] w-full h-full rounded-lg mt-4 mx-6 mb-6 text-white flex flex-col items-center gap-4 min-w-[430px]">
       <h3 className=" mt-4 font-semibold text-2xl">Filters</h3>
-      <div className="flex flex-col font-medium text-sm gap-2 w-full">
+      <div className="flex flex-col font-medium text-sm gap-2 w-full ">
         <div className="flex justify-between  mx-6 ">
           <span className="text-[#979797]">Filters Applied</span>
           <span>Clear All</span>
         </div>
         <CardLayout>
-          <span className="inline-flex items-center gap-x-0.5 rounded-md bg-[#53ACFF]  text-xs font-medium text-[#202020] h-[18px] w-[87px] pl-1 pr-1 py-[2px]">
+          <span className="inline-flex items-center gap-x-0.5 rounded-md bg-[#53ACFF]  text-xs font-medium text-[#202020] h-[18px]  pl-1 pr-1 py-[2px]">
             Real Estate
             <button type="button" className="group relative -mr-1  rounded-sm ">
               <span className="sr-only">Remove</span>
@@ -31,7 +31,7 @@ const Filters = () => {
       </div>
       <CardLayout>
         <h3 className="font-bold text-sm">Stock</h3>
-        <div className="relative w-full">
+        <div className="relative ">
           {/* Adjusted width for mobile */}
           <input
             id="search"
