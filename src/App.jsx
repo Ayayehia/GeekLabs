@@ -7,8 +7,8 @@ function App() {
   const [sidebarOpen, setSideBarOpen] = useState(false);
 
   return (
-    <main className="grid grid-cols-7 gap-4 relative">
-      <div className="col-span-7 md:col-span-5 text-white   relative">
+    <main className="grid grid-cols-7 gap-4 relative ">
+      <div className="col-span-7 md:col-span-5 text-white   relative ">
         <div className="ml-[132px]">
           <Header sidebarOpen={sidebarOpen} setSideBarOpen={setSideBarOpen} />
           <Table />
@@ -20,7 +20,7 @@ function App() {
         )}
       </div>
       {/* second component */}
-      <div className="col-span-5 lg:col-span-2">
+      <div className="col-span-5 ml-[132px] xl:col-span-2 ">
         <Filters />
       </div>
     </main>
