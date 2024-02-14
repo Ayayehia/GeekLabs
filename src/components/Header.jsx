@@ -5,13 +5,22 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Header = () => {
+const Header = ({ sidebarOpen, setSideBarOpen }) => {
+  const handleViewSidebar = () => {
+    setSideBarOpen((prevState) => !prevState);
+  };
   return (
-    <Disclosure as="nav" className="bg-[#202020] mt-9 ">
+    <Disclosure as="nav" className="bg-[#202020] mt-9  ">
       <>
         <div className="flex h-16 items-center w-full">
           <div className="mr-7">
-            <h3 className="font-bold text-5xl">ALERTS</h3>
+            <button
+              type="button"
+              className="font-bold text-5xl hover:text-white focus:outline-none"
+              onMouseEnter={handleViewSidebar}
+            >
+              ALERTS
+            </button>
           </div>
           <div className="flex w-3/4">
             <div className="relative w-full md:w-3/4 mr-3">

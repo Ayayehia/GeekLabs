@@ -126,11 +126,11 @@ function classNames(...classes) {
 const SideBar = () => {
   return (
     <>
-      <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#181818] lg:px-6 w-44 h-screen">
+      <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#181818] lg:px-6 w-[215px] h-full z-50">
         <div className="flex h-16 shrink-0 items-center ml-10 mr-9 mt-7">
           <img className="h-14 w-32 " src={Logo} alt="Company Logo" />
         </div>
-        <nav className="flex flex-1 flex-col ">
+        <nav className="flex flex-1 flex-col h-full">
           <ul role="list" className="flex flex-1 flex-col gap-y-7">
             <li>
               <ul role="list" className="-mx-2 space-y-1 ml-5 mr-3">
