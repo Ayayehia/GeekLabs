@@ -1,23 +1,20 @@
-import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import notification from "../assets/notification.png";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Header = () => {
   return (
-    <Disclosure as="nav" className="bg-[#202020]">
+    <Disclosure as="nav" className="bg-[#202020] mt-9 ">
       <>
         <div className="flex h-16 items-center w-full">
-          <div className="w-1/4">
+          <div className="mr-7">
             <h3 className="font-bold text-5xl">ALERTS</h3>
           </div>
           <div className="flex w-3/4">
-            <div className="relative w-full md:w-3/4">
-              {/* Adjusted width for mobile */}
+            <div className="relative w-full md:w-3/4 mr-3">
               <input
                 id="search"
                 name="search"
@@ -36,7 +33,7 @@ const Header = () => {
               type="button"
               className="relative flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
-              <BellIcon className="h-6 w-6" aria-hidden="true" />
+              <img src={notification} />
             </button>
           </div>
         </div>

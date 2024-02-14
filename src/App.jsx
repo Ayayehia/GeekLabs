@@ -11,7 +11,7 @@ function App() {
         <Table />
       </div>
       {/* second component */}
-      <div className="col-span-7 md:col-span-2">
+      <div className="col-span-5 lg:col-span-2">
         <Filters />
       </div>
     </main>
