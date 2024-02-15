@@ -27,7 +27,7 @@ const Header = ({ sidebarOpen, setSideBarOpen }) => {
               <input
                 id="search"
                 name="search"
-                className="block w-full rounded-md border-0 bg-gray-700 py-1.5 pl-10 pr-3 text-white placeholder:text-white sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 bg-[#313131] py-1.5 pl-10 pr-3 text-white placeholder:text-white sm:text-sm sm:leading-6"
                 placeholder="Search BY ..."
                 type="search"
               />
