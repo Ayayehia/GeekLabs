@@ -5,7 +5,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Header = ({ sidebarOpen, setSideBarOpen }) => {
+const Header = ({ setSideBarOpen }) => {
   const handleViewSidebar = () => {
     setSideBarOpen((prevState) => !prevState);
   };

@@ -84,7 +84,6 @@ const data = [
     stocks: { value: "-0.25%", logo: StocksLogo },
     risk: { value: "Low Risk", logo: LowRiskLogo, color: "red" },
   },
-  // Add other entries similarly
 ];
 
 const Table = () => {
