@@ -6,9 +6,11 @@ Implement functionality to show the sidebar when hovering over the word "Alert" 
 Ensure that clicking on the word "Alert" toggles the sidebar visibility: if it's visible, clicking should hide it, and vice versa.
 Responsive Design:
 
-Ensure responsiveness for mobile and tablet devices.
+Ensure responsiveness for mobile and tablet devices .
 Use media queries or Tailwind's responsive utility classes to adjust layout and styling as needed for smaller screens.
 Confirm that the design maintains usability and aesthetics across different screen sizes.
+
+NOTE: IN MOBILE,TABLET I MADE THE RESPONSIVE RESPONSIVE AS HOW I SEE,AS THE DESIGN GIVEN WAS ONLY FOR DESKTOP.
 
 -Tech Stack:
 
