@@ -1,8 +1,21 @@
-# React + Vite
+-Instructions for Users:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Toggle Sidebar on Hover:
 
-Currently, two official plugins are available:
+Implement functionality to show the sidebar when hovering over the word "Alert" and hide it when the mouse leaves.
+Ensure that clicking on the word "Alert" toggles the sidebar visibility: if it's visible, clicking should hide it, and vice versa.
+Responsive Design:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ensure responsiveness for mobile and tablet devices.
+Use media queries or Tailwind's responsive utility classes to adjust layout and styling as needed for smaller screens.
+Confirm that the design maintains usability and aesthetics across different screen sizes.
+
+-Tech Stack:
+
+React
+Tailwind CSS
+Shadcn (assuming this is a custom technology or library)
+
+
+
+<img width="683" alt="Screenshot 2024-02-15 122157" src="https://github.com/Ayayehia/GeekLabs/assets/120187793/07f7d69e-a880-4be6-bacb-5a6e61cac5ca">
