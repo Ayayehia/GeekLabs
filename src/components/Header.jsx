@@ -5,10 +5,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Header = ({ setSideBarOpen }) => {
-  const handleViewSidebar = () => {
-    setSideBarOpen((prevState) => !prevState);
-  };
+const Header = ({ setSideBarOpen, handleViewSidebar }) => {
   return (
     <Disclosure as="nav" className="bg-[#202020] mt-9  ">
       <>

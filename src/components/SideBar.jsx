@@ -44,12 +44,17 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const SideBar = () => {
+const SideBar = ({ handleViewSidebar }) => {
   return (
     <>
-      <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#181818] lg:px-6 w-[215px] h-full z-50">
+      <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#181818] lg:px-6 w-[173px] md:w-[215px] h-full z-50 fixed">
         <div className="flex h-16 shrink-0 items-center ml-10 mr-9 mt-7">
-          <img className="h-14 w-32 " src={Logo} alt="Company Logo" />
+          <img
+            className="h-14 w-32 "
+            src={Logo}
+            alt="Company Logo"
+            onClick={handleViewSidebar}
+          />
         </div>
         <nav className="flex flex-1 flex-col h-full">
           <ul role="list" className="flex flex-1 flex-col gap-y-7">

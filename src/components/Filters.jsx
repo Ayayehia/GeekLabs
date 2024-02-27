@@ -6,7 +6,7 @@ import RadioCollapse from "./RadioCollapse";
 import CarsoulChoice from "./CarsoulChoice";
 const Filters = () => {
   return (
-    <div className="bg-[#181818] w-full h-full rounded-lg mt-4 mx-6 mb-6 text-white flex flex-col items-center gap-4 min-w-[430px]">
+    <div className="bg-[#181818] w-full h-full rounded-lg mt-4 mx-8 mb-6 text-white flex flex-col items-center gap-4 min-w-[430px]">
       <h3 className=" mt-4 font-semibold text-2xl">Filters</h3>
       <div className="flex flex-col font-medium text-sm gap-2 w-full ">
         <div className="flex justify-between  mx-6 ">
