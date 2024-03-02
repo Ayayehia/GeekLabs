@@ -52,7 +52,7 @@ const IndustryCollapse = () => {
         </span>
       </h3>
       <div>
-        <div className="grid grid-cols-2 text-xs gap-12 text-nowrap ">
+        <div className="grid grid-cols-2 text-xs gap-8 text-nowrap ">
           <ul className="relative">
             <img
               src={Line}
