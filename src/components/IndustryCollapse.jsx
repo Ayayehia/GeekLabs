@@ -44,14 +44,15 @@ const data = [
 
 const IndustryCollapse = () => {
   return (
-    <Collapsible defaultOpen={true}>
-      <CollapsibleTrigger>
+    <div>
+      <h3>
         <span className="font-bold flex items-center mt-4 gap-1 mb-3">
-          <img src={Arrow} className="w-2 h-[6px]" /> Industry
+          {/* <img src={Arrow} className="w-2 h-[6px]" />  */}
+          Industry
         </span>
-      </CollapsibleTrigger>
-      <CollapsibleContent>
-        <div className="grid grid-cols-2 text-xs gap-12 text-nowrap">
+      </h3>
+      <div>
+        <div className="grid grid-cols-2 text-xs gap-12 text-nowrap ">
           <ul className="relative">
             <img
               src={Line}
@@ -77,8 +78,8 @@ const IndustryCollapse = () => {
             ))}
           </ul>
         </div>
-      </CollapsibleContent>
-    </Collapsible>
+      </div>
+    </div>
   );
 };
 

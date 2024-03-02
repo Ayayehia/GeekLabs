@@ -4,9 +4,10 @@ import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import IndustryCollapse from "./IndustryCollapse";
 import RadioCollapse from "./RadioCollapse";
 import CarsoulChoice from "./CarsoulChoice";
+import WheelPicker from "./WheelPicker";
 const Filters = () => {
   return (
-    <div className="bg-[#181818] w-full h-full rounded-lg mt-4 mx-8 mb-6 text-white flex flex-col items-center gap-4 min-w-[430px]">
+    <div className="bg-[#181818]   rounded-lg mt-4 mx-8 mb-6 text-white flex flex-col items-center gap-4 max-w-[472px] h-full">
       <h3 className=" mt-4 font-semibold text-2xl">Filters</h3>
       <div className="flex flex-col font-medium text-sm gap-2 w-full ">
         <div className="flex justify-between  mx-6 ">
@@ -47,34 +48,41 @@ const Filters = () => {
             />
           </div>
         </div>
-        <IndustryCollapse />
-        <div className="flex justify-around gap-24">
-          <RadioCollapse
-            title="Market Cap"
-            notificationMethods={[
-              { id: "1", title: "Micro" },
-              { id: "2", title: "Small" },
-              { id: "3", title: "Large" },
-            ]}
-          />
-          <RadioCollapse
-            title="Risk Level"
-            notificationMethods={[
-              { id: "1", title: "Low Risk" },
-              { id: "2", title: "Mid Risk" },
-              { id: "3", title: "Low Risk" },
-            ]}
-          />
-        </div>
-        <div className="flex justify-between gap-20">
-          <CarsoulChoice
-            label="Strategy"
-            words={["BIg Options Buy", "Merger Artitrage", "Short Reports"]}
-          />
-          <CarsoulChoice
-            label="Asset"
-            words={["Stocks", "Options", "Futures"]}
-          />
+
+        <div className="flex flex-col justify-around items-center ml-6 mr-4 ">
+          <div>
+            <IndustryCollapse />
+          </div>
+
+          <div className="flex justify-between w-full">
+            <RadioCollapse
+              title="Market Cap"
+              notificationMethods={[
+                { id: "1", title: "Micro" },
+                { id: "2", title: "Small" },
+                { id: "3", title: "Large" },
+              ]}
+            />
+            <RadioCollapse
+              title="Risk Level"
+              notificationMethods={[
+                { id: "4", title: "Low Risk" },
+                { id: "5", title: "Mid Risk" },
+                { id: "6", title: "Low Risk" },
+              ]}
+            />
+          </div>
+
+          <div className="flex justify-between w-full">
+            <WheelPicker
+              title="Strategy"
+              options={["BIg Options Buy", "Merger Artitrage", "Short Reports"]}
+            />
+            <WheelPicker
+              title="Asset"
+              options={["Stocks", "Options", "Futures"]}
+            />
+          </div>
         </div>
       </CardLayout>
       <button

@@ -14,3 +14,27 @@ body {
   min-height: 100vh;
   background-color: #202020;
 }
+.wheel-container {
+  perspective: 1000px;
+  height: 100px; /* Adjust based on your needs */
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Ensure it fills the container */
+}
+
+.option {
+  position: absolute;
+  text-align: center;
+  transform-origin: center bottom; /* Adjust based on the visual effect you're aiming for */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5; /* Make non-selected items less prominent */
+
+  border-radius: 24px;
+  padding: 4px 3px 4px 3px;
+  color: white;
+}
+
+.selected {
+  opacity: 1;
+  background-color: #53acff; /* Highlight the selected item */
+}

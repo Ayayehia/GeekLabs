@@ -2,34 +2,20 @@ import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import Table from "./components/Table";
 import Filters from "./components/Filters";
-import { useState } from "react";
+
 function App() {
-  const [sidebarOpen, setSideBarOpen] = useState(false);
-  const handleViewSidebar = () => {
-    setSideBarOpen((prevState) => !prevState);
-  };
   return (
-    <main className="grid grid-cols-7 gap-4 relative ">
-      <div className="col-span-7 md:col-span-5 text-white  relative ">
-        <div className="md:ml-[132px]">
-          <Header
-            sidebarOpen={sidebarOpen}
-            setSideBarOpen={setSideBarOpen}
-            handleViewSidebar={handleViewSidebar}
-          />
-          <Table />
-        </div>
-        {sidebarOpen && (
-          <div className="absolute top-0 left-0 z-10 h-full">
-            <SideBar
-              setSideBarOpen={setSideBarOpen}
-              handleViewSidebar={handleViewSidebar}
-            />
-          </div>
-        )}
+    <main className=" gap-4 relative xl:flex xl:flex-row flex flex-col w-full  xl:items-start 2xl:justify-between ">
+      <div className="w-[10%] xl:mr-0 sm:mr-12 ">
+        <SideBar />
       </div>
-      {/* second component */}
-      <div className="col-span-5 md:ml-[132px] xl:col-span-2 ">
+
+      <div className="text-white w-[80%]  ">
+        <Header />
+        <Table />
+      </div>
+
+      <div className=" sm:ml-10 xl:w-[34%] sm:w-[80%] xl:mt-7">
         <Filters />
       </div>
     </main>

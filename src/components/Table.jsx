@@ -89,7 +89,7 @@ const data = [
 const Table = () => {
   return (
     <Scrollbars style={{ height: 800 }}>
-      <div className="mt-10 text-black">
+      <div className="mt-10 text-black ">
         {data.map((item, index) => (
           <div
             className="bg-[#414040] w-full rounded-lg flex justify-evenly items-center text-white py-3 mb-4"

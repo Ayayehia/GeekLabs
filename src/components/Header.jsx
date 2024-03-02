@@ -1,26 +1,27 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import notification from "../assets/notification.png";
+import notification from "../assets/Group 103.png";
+import Line from "../assets/Line 29.png";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Header = ({ setSideBarOpen, handleViewSidebar }) => {
+const Header = () => {
   return (
     <Disclosure as="nav" className="bg-[#202020] mt-9  ">
       <>
         <div className="flex h-16 items-center w-full">
-          <div className="mr-7">
+          <div className="mr-7 flex gap-3">
+            <img src={Line} />
             <button
               type="button"
               className="font-bold text-5xl hover:text-white focus:outline-none"
-              onMouseEnter={handleViewSidebar}
             >
               ALERTS
             </button>
           </div>
           <div className="flex w-3/4">
-            <div className="relative w-full md:w-3/4 mr-3">
+            <div className="relative w-full mr-3">
               <input
                 id="search"
                 name="search"
