@@ -54,7 +54,7 @@ const Filters = () => {
             <IndustryCollapse />
           </div>
 
-          <div className="flex justify-between w-full">
+          <div className="flex justify-between w-full ">
             <RadioCollapse
               title="Market Cap"
               notificationMethods={[

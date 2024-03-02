@@ -39,7 +39,7 @@ const WheelPicker = ({ options, title }) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "start",
       }}
       className="w-full"
     >
@@ -47,7 +47,7 @@ const WheelPicker = ({ options, title }) => {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "start",
           alignItems: "center",
         }}
         className="wheel-container !w-full "
